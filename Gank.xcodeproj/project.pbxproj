@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A0A1EB5BEA0EA66DDCFC3B7C /* Pods_Gank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71DE5E34C80D7F11D29D874 /* Pods_Gank.framework */; };
-		C819FF661CE71E70004D569E /* README-EN.md in Sources */ = {isa = PBXBuildFile; fileRef = C819FF651CE71E70004D569E /* README-EN.md */; };
 		C83D57C71CE62E1B00762FF1 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = C83D57C61CE62E1A00762FF1 /* screenshot.png */; };
 		C83D57C91CE62E2300762FF1 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C83D57C81CE62E2300762FF1 /* LICENSE.txt */; };
-		C83D57CB1CE6300400762FF1 /* screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = C83D57CA1CE6300400762FF1 /* screenshot2.png */; };
-		C83D57EB1CE633F000762FF1 /* screenshot3.png in Resources */ = {isa = PBXBuildFile; fileRef = C83D57EA1CE633F000762FF1 /* screenshot3.png */; };
 		C84B06BF1CE6F86300EA2FC7 /* SwiftyTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84B06BE1CE6F86300EA2FC7 /* SwiftyTimer.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C87D6BA31CE4731B00AA31B6 /* GankItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87D6BA21CE4731B00AA31B6 /* GankItem.swift */; };
 		C87D6BB61CE486F800AA31B6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87D6BB31CE486F800AA31B6 /* Alamofire.framework */; };
@@ -36,6 +33,8 @@
 		C8EB09A21CE58ADB00861B77 /* NSColor+Gank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB099E1CE58ADB00861B77 /* NSColor+Gank.swift */; };
 		C8EB09A71CE58BAB00861B77 /* GankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EB09A51CE58BAB00861B77 /* GankViewController.swift */; };
 		C8EB09A81CE58BAB00861B77 /* GankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8EB09A61CE58BAB00861B77 /* GankViewController.xib */; };
+		D6436B911DC1B1120081C1FB /* screenshot3.png in Resources */ = {isa = PBXBuildFile; fileRef = C83D57EA1CE633F000762FF1 /* screenshot3.png */; };
+		D6436B921DC1B1120081C1FB /* screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = C83D57CA1CE6300400762FF1 /* screenshot2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -210,12 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C887EF851CE37ADD0065DA55 /* Build configuration list for PBXNativeTarget "Gank" */;
 			buildPhases = (
-				7BC71D198D290E6BFE14D67A /* 📦 Check Pods Manifest.lock */,
+				7BC71D198D290E6BFE14D67A /* [CP] Check Pods Manifest.lock */,
 				C887EF741CE37ADD0065DA55 /* Sources */,
 				C887EF751CE37ADD0065DA55 /* Frameworks */,
 				C887EF761CE37ADD0065DA55 /* Resources */,
-				FFBA0E0253CDDD57E5FE391E /* 📦 Embed Pods Frameworks */,
-				70E4634D0A49A86454191B68 /* 📦 Copy Pods Resources */,
+				FFBA0E0253CDDD57E5FE391E /* [CP] Embed Pods Frameworks */,
+				70E4634D0A49A86454191B68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,11 +232,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Tsinghua University";
 				TargetAttributes = {
 					C887EF771CE37ADD0065DA55 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BA278AAXNN;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -264,8 +266,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C83D57EB1CE633F000762FF1 /* screenshot3.png in Resources */,
-				C83D57CB1CE6300400762FF1 /* screenshot2.png in Resources */,
+				D6436B911DC1B1120081C1FB /* screenshot3.png in Resources */,
+				D6436B921DC1B1120081C1FB /* screenshot2.png in Resources */,
 				C887EF7E1CE37ADD0065DA55 /* Assets.xcassets in Resources */,
 				C8EB09A81CE58BAB00861B77 /* GankViewController.xib in Resources */,
 				C887EF901CE3831E0065DA55 /* MainMenu.xib in Resources */,
@@ -277,14 +279,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		70E4634D0A49A86454191B68 /* 📦 Copy Pods Resources */ = {
+		70E4634D0A49A86454191B68 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,29 +294,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gank/Pods-Gank-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7BC71D198D290E6BFE14D67A /* 📦 Check Pods Manifest.lock */ = {
+		7BC71D198D290E6BFE14D67A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FFBA0E0253CDDD57E5FE391E /* 📦 Embed Pods Frameworks */ = {
+		FFBA0E0253CDDD57E5FE391E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +344,6 @@
 				C8C636BE1CE5EDC300801E00 /* GankSection.swift in Sources */,
 				C887EF8A1CE37FF10065DA55 /* EventMonitor.swift in Sources */,
 				C87D6BA31CE4731B00AA31B6 /* GankItem.swift in Sources */,
-				C819FF661CE71E70004D569E /* README-EN.md in Sources */,
 				C887EF921CE384DB0065DA55 /* GankAPI.swift in Sources */,
 				C8EB099A1CE58A6A00861B77 /* GankSectionCell.swift in Sources */,
 				C8EB09991CE58A6A00861B77 /* GankScrollView.swift in Sources */,
@@ -367,8 +368,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -412,8 +415,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -432,6 +437,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -439,13 +445,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F9AAFD7867AD56F0F15DDA2 /* Pods-Gank.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BA278AAXNN;
 				INFOPLIST_FILE = Gank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.tsinghua.Gank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -453,13 +463,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 794D55073DB106AE6F7076E8 /* Pods-Gank.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BA278AAXNN;
 				INFOPLIST_FILE = Gank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.tsinghua.Gank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
