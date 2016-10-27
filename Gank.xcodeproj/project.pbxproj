@@ -72,6 +72,7 @@
 		C8EB099E1CE58ADB00861B77 /* NSColor+Gank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Gank.swift"; sourceTree = "<group>"; };
 		C8EB09A51CE58BAB00861B77 /* GankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankViewController.swift; sourceTree = "<group>"; };
 		C8EB09A61CE58BAB00861B77 /* GankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GankViewController.xib; sourceTree = "<group>"; };
+		D6436B931DC1D3910081C1FB /* Gank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gank.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +167,7 @@
 		C887EF7A1CE37ADD0065DA55 /* Gank */ = {
 			isa = PBXGroup;
 			children = (
+				D6436B931DC1D3910081C1FB /* Gank.entitlements */,
 				C87D6BA11CE472DC00AA31B6 /* Support */,
 				C8EB09701CE4D50300861B77 /* Actions */,
 				C87D6B9D1CE4728E00AA31B6 /* Models */,
@@ -240,6 +242,11 @@
 						DevelopmentTeam = BA278AAXNN;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -447,6 +454,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Gank/Gank.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BA278AAXNN;
@@ -465,6 +473,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Gank/Gank.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = BA278AAXNN;
